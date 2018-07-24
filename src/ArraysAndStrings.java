@@ -2,6 +2,9 @@ public class ArraysAndStrings {
 
 
 
+    /*
+       Given a string check if all the chars are unique
+     */
     public static boolean IsUnique(String s){
       //this assumes the characters are ascii
 
@@ -22,5 +25,12 @@ public class ArraysAndStrings {
                 return true;
     }
 
+
+    /*
+     Given two string check if the one string is a permutation of the other
+     */
+    public static boolean chekPermutations(String a , String b){
+
+    }
 
 }
