@@ -4,6 +4,57 @@ public class ArraysAndStrings {
 
 
 
+
+    /*
+        One away
+    */
+    public static boolean  OneAway(String str , String str2){
+        //check if strings are equal
+
+        //if one string is lower than the other in length check if the big one contains the low one and if it don
+
+        if (str.equals(str2)) {
+            return true;
+        }
+
+        int strLen = str.length();
+        int str2Len = str2.length();
+
+        if (strLen < str2Len){
+
+            if (str2.contains(str)){
+
+                if((str2Len - strLen) <= 1 ){
+                    return true;
+                }
+
+                return false;
+            }else {
+                return false;
+            }
+        }else{
+
+            if (str.contains(str2)){
+
+                if((strLen - str2Len) <= 1 ){
+                    return true;
+                }
+
+                return false;
+
+            }else{
+                return false;
+
+            }
+        }
+
+    }
+    /*
+       Palindrome Permutation
+    */
+     public static void PalindromePermutation(String str){
+
+     }
     /*
        Given a string check if all the chars are unique
      */

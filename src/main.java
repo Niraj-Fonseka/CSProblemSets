@@ -17,12 +17,15 @@ public class main {
         System.out.println();
 
 
-
-
         String url = "Mr John Smith";
         String urlFyed = ArraysAndStrings.URLify(url,12);
         System.out.println(urlFyed);
         System.out.println();
 
+
+
+        boolean isOneWay = ArraysAndStrings.OneAway("pale" , "ple");
+        System.out.println(isOneWay);
     }
+
 }
