@@ -6,6 +6,27 @@ public class ArraysAndStrings {
 
 
     /*
+        String comparison
+    */
+    public static String StringComparison(String str){
+
+        char [] strToChar = str.toCharArray();
+
+        int count = 0;
+        String finalStr = "";
+
+        for(int i =0 ; i < strToChar.length -1 ; i++){
+            if (strToChar[i] == strToChar[i+1]){
+                count++;
+            }else{
+                finalStr += strToChar[i-1] + count;
+                        count = 0;
+            }
+        }
+
+        return finalStr;
+    }
+    /*
         One away
     */
     public static boolean  OneAway(String str , String str2){
@@ -49,6 +70,7 @@ public class ArraysAndStrings {
         }
 
     }
+
     /*
        Palindrome Permutation
     */

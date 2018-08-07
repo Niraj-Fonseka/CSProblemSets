@@ -23,9 +23,8 @@ public class main {
         System.out.println();
 
 
-
-        boolean isOneWay = ArraysAndStrings.OneAway("pale" , "ple");
-        System.out.println(isOneWay);
+        String output = ArraysAndStrings.StringComparison("aabcccca");
+        System.out.println(output);
     }
 
 }
