@@ -1,14 +1,15 @@
-import java.lang.reflect.Array;
+public class Main {
 
-public class main {
+    public static void main(String[] args) {
+	// write your code here
 
-    public static void main (String [] args){
         System.out.println("Starting the CS ProblemSets Project");
 
         String str = "Help";
         boolean bool = ArraysAndStrings.IsUnique(str);
         System.out.println(bool);
         System.out.println();
+
 
         String perm1 = "Hello";
         String perm2 = "hEllo";
@@ -25,6 +26,6 @@ public class main {
 
         String output = ArraysAndStrings.StringComparison("aabcccca");
         System.out.println(output);
-    }
 
+    }
 }

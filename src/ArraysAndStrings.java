@@ -20,7 +20,7 @@ public class ArraysAndStrings {
                 count++;
             }else{
                 finalStr += strToChar[i-1] + count;
-                        count = 0;
+                count = 0;
             }
         }
 
@@ -74,14 +74,14 @@ public class ArraysAndStrings {
     /*
        Palindrome Permutation
     */
-     public static void PalindromePermutation(String str){
+    public static void PalindromePermutation(String str){
 
-     }
+    }
     /*
        Given a string check if all the chars are unique
      */
     public static boolean IsUnique(String s){
-      //this assumes the characters are ascii
+        //this assumes the characters are ascii
         System.out.println("Running IsUnique");
         if (s.length() > 128) {
             return false;
@@ -89,15 +89,15 @@ public class ArraysAndStrings {
 
         boolean [] char_set = new boolean[128];
 
-                for(int i = 0 ; i < s.length() ; i++){
-                    int val = s.charAt(i);
-                            if (char_set[val]) {
-                                return false;
-                            }
-                            char_set[val] = true;
-                }
+        for(int i = 0 ; i < s.length() ; i++){
+            int val = s.charAt(i);
+            if (char_set[val]) {
+                return false;
+            }
+            char_set[val] = true;
+        }
 
-                return true;
+        return true;
     }
 
 
@@ -138,14 +138,14 @@ public class ArraysAndStrings {
 
         char [] strArr = a.toCharArray();
         StringBuilder sb = new StringBuilder();
-                for(int i = 0 ; i < strArr.length ; i++){
-                    if ((int)strArr[i] == 32) {
-                        sb.append("%20");
-                    }else {
-                        sb.append(strArr[i]);
-                    }
-                }
+        for(int i = 0 ; i < strArr.length ; i++){
+            if ((int)strArr[i] == 32) {
+                sb.append("%20");
+            }else {
+                sb.append(strArr[i]);
+            }
+        }
 
-                return sb.toString();
+        return sb.toString();
     }
 }
