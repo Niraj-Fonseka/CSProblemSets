@@ -1,10 +1,15 @@
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
 
         System.out.println("Starting the CS ProblemSets Project");
+        ArraysAndStrings();
 
+
+    }
+
+
+    public  static void ArraysAndStrings(){
         String str = "Help";
         boolean bool = ArraysAndStrings.IsUnique(str);
         System.out.println(bool);
@@ -27,5 +32,10 @@ public class Main {
         String output = ArraysAndStrings.StringComparison("aabcccca");
         System.out.println(output);
 
+        byte[][] ImageMatrix = new byte[][]{
+                { 0, 0, 0},
+                { 0, 0, 0}
+        };
+       ArraysAndStrings.RotateMatrix(ImageMatrix);
     }
 }

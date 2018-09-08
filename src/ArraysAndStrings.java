@@ -4,12 +4,27 @@ public class ArraysAndStrings {
 
 
 
+    /*
+     Rotate Matrix
+     */
+
+    public static void RotateMatrix(byte[][] image){
+        System.out.println("Running Rotate Matrix : 1.6");
+
+
+
+    }
+
+
+    public void Print2DMatrix(byte [][] matrix) {
+
+    }
 
     /*
         String comparison
     */
     public static String StringComparison(String str){
-
+        System.out.println("Running String Comparison : 1.6");
         char [] strToChar = str.toCharArray();
 
         int count = 0;
@@ -30,6 +45,7 @@ public class ArraysAndStrings {
         One away
     */
     public static boolean  OneAway(String str , String str2){
+        System.out.println("Running One Way : 1.5");
         //check if strings are equal
 
         //if one string is lower than the other in length check if the big one contains the low one and if it don
@@ -82,7 +98,7 @@ public class ArraysAndStrings {
      */
     public static boolean IsUnique(String s){
         //this assumes the characters are ascii
-        System.out.println("Running IsUnique");
+        System.out.println("Running IsUnique : 1.1");
         if (s.length() > 128) {
             return false;
         }
@@ -106,7 +122,7 @@ public class ArraysAndStrings {
      */
     public static boolean chekPermutations(String a , String b){
 
-        System.out.println("Running CheckPermutations");
+        System.out.println("Running CheckPermutations : 1.2");
         String sorted_a = Sort(a.toLowerCase());
         String sorted_b = Sort(b.toLowerCase());
 
