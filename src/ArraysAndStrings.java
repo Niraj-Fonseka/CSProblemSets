@@ -8,16 +8,33 @@ public class ArraysAndStrings {
      Rotate Matrix
      */
 
-    public static void RotateMatrix(byte[][] image){
+    public static void RotateMatrix(int[][] imageMatrix) {
         System.out.println("Running Rotate Matrix : 1.6");
+        Print2DMatrix(imageMatrix);
 
-
+        int[][] rotatedMatrix = new int[imageMatrix.length][imageMatrix.length];
+        int valueToRotate;
+        for (int i = 0; i < imageMatrix.length; i++) {
+            for (int k = 0; k < imageMatrix.length; k++) {
+                valueToRotate = imageMatrix[i][k];
+                System.out.println("Value to Rotate : " + valueToRotate);
+                System.out.println("Applying to Location row : " + i + " col : " + ((imageMatrix.length - 1) - i));
+                rotatedMatrix[k][(imageMatrix.length - 1) - i] = valueToRotate;
+            }
+        }
+        System.out.println();
+        Print2DMatrix(rotatedMatrix);
 
     }
 
+    public static void Print2DMatrix(int [][] imageMatrix) {
 
-    public void Print2DMatrix(byte [][] matrix) {
-
+        for (int row = 0 ; row < imageMatrix.length ;row++) {
+            for(int col = 0; col < (imageMatrix[0]).length ; col++) {
+                System.out.print(imageMatrix[row][col] + " ");
+            }
+            System.out.println();
+        }
     }
 
     /*

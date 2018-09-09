@@ -32,10 +32,11 @@ public class Main {
         String output = ArraysAndStrings.StringComparison("aabcccca");
         System.out.println(output);
 
-        byte[][] ImageMatrix = new byte[][]{
-                { 0, 0, 0},
-                { 0, 0, 0}
+        int[][] ImageMatrix = new int[][]{
+                { 1, 2, 3},
+                { 4, 5, 6},
+                { 7, 8, 9}
         };
-       ArraysAndStrings.RotateMatrix(ImageMatrix);
+        ArraysAndStrings.RotateMatrix(ImageMatrix);
     }
 }
