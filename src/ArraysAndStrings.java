@@ -1,7 +1,53 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ArraysAndStrings {
 
+
+     /*
+        Zero Matrix
+     */
+    public static void ZeroMatrix(int [][]zeroMatrix){
+        System.out.println("Running Zero Matrix ");
+        boolean [] zeroRows = new boolean[zeroMatrix.length];
+        boolean [] zeroCols = new boolean[zeroMatrix[0].length];
+
+        int value;
+        Print2DMatrix(zeroMatrix);
+        
+        ArrayList<Integer> indexesToSkip = new ArrayList<Integer>();
+        for(int i = 0 ; i < zeroMatrix.length ; i++){
+            for(int k = 0 ; k < zeroMatrix[0].length; k++){
+                    value = zeroMatrix[i][k];
+                    if (value == 0) {
+                        zeroRows[i] = true;
+                        zeroCols[k] = true;
+                    }
+            }
+        }
+
+        //Zero Rows
+        for (int zeroRow = 0 ; zeroRow < zeroRows.length ; zeroRow++){
+            if (zeroRows[zeroRow]) {
+                for (int k = 0 ; k < zeroMatrix[0].length ; k++) {
+                    zeroMatrix[zeroRow][k] = 0;
+                }
+            }
+        }
+
+        //Zero Cols
+        for (int zeroCol = 0 ; zeroCol < zeroCols.length ; zeroCol++){
+            if (zeroCols[zeroCol]) {
+                for (int k = 0 ; k < zeroMatrix.length ; k++) {
+                    zeroMatrix[k][zeroCol] = 0;
+                }
+            }
+        }
+
+
+        Print2DMatrix(zeroMatrix);
+
+    }
 
 
     /*
@@ -17,8 +63,6 @@ public class ArraysAndStrings {
         for (int i = 0; i < imageMatrix.length; i++) {
             for (int k = 0; k < imageMatrix.length; k++) {
                 valueToRotate = imageMatrix[i][k];
-                System.out.println("Value to Rotate : " + valueToRotate);
-                System.out.println("Applying to Location row : " + i + " col : " + ((imageMatrix.length - 1) - i));
                 rotatedMatrix[k][(imageMatrix.length - 1) - i] = valueToRotate;
             }
         }
@@ -35,6 +79,7 @@ public class ArraysAndStrings {
             }
             System.out.println();
         }
+        System.out.println("\n");
     }
 
     /*
