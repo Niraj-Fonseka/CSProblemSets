@@ -14,7 +14,7 @@ public class ArraysAndStrings {
 
         int value;
         Print2DMatrix(zeroMatrix);
-        
+
         ArrayList<Integer> indexesToSkip = new ArrayList<Integer>();
         for(int i = 0 ; i < zeroMatrix.length ; i++){
             for(int k = 0 ; k < zeroMatrix[0].length; k++){
