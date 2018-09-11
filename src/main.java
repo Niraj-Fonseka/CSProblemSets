@@ -9,8 +9,19 @@ public class Main {
     }
 
     public static void TreesAndGraphs(){
+        Graph graph = TreesAndGraphs.CreateGraph(3);
 
+        graph.printGraph();
+        //Testing Graph
+        graph.addEdge(0,1);
+        graph.addEdge(0,2);
+        graph.addEdge(0,3);
+        graph.addEdge(1,3 );
+
+        graph.printGraph();
     }
+
+
 
     public  static void ArraysAndStrings(){
         String str = "Help";
