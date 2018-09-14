@@ -9,16 +9,28 @@ public class Main {
     }
 
     public static void TreesAndGraphs(){
-        Graph graph = TreesAndGraphs.CreateGraph(3);
+        Graph graphDFS = TreesAndGraphs.CreateGraph(5);
+        graphDFS.addEdge(0,1);
+        graphDFS.addEdge(0,2 );
+        graphDFS.addEdge(2,4);
+        graphDFS.addEdge(4,2);
+        graphDFS.addEdge(1,2);
+        graphDFS.printGraph();
+        graphDFS.DFS(4,5);
 
-        graph.printGraph();
-        //Testing Graph
-        graph.addEdge(0,1);
-        graph.addEdge(0,2);
-        graph.addEdge(0,3);
-        graph.addEdge(1,3 );
 
-        graph.printGraph();
+        Graph graphBFS = TreesAndGraphs.CreateGraph(10);
+        graphBFS.addEdge(0,1);
+        graphBFS.addEdge(1,2 );
+        graphBFS.addEdge(2,3);
+        graphBFS.addEdge(3,4);
+        graphBFS.addEdge(3,5);
+        graphBFS.addEdge(3,6);
+        graphBFS.addEdge(5,7);
+        graphBFS.addEdge(5,8);
+        graphBFS.addEdge(6,9);
+        graphBFS.printGraph();
+        graphBFS.BFS(0,10 , 11);
     }
 
 
