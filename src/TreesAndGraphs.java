@@ -88,7 +88,6 @@ class Graph {
 
         //Printing out the visisted list of nodes
         System.out.println(v + " " );
-
         //Creating a list iterator to iterate through the linked list
         Iterator<Integer> i = adjList[v].listIterator();
         while(i.hasNext()){
