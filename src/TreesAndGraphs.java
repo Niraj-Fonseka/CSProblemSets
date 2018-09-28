@@ -13,7 +13,23 @@ public class TreesAndGraphs{
 }
 
 
+class Node {
+    public string name;
+    public Node[] children;
+}
 
+class Tree {
+    public Node root;
+
+
+
+    
+}
+
+
+/*
+ class Graph without Node Class
+ */
 class Graph {
 
     //Number of vertices
